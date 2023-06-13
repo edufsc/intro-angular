@@ -12,6 +12,9 @@ import { MiContadorComponent } from './pages/mi-contador/mi-contador.component';
 import { PokedexComponent } from './pages/pokedex/pokedex.component';
 import { HttpClientModule } from '@angular/common/http';
 import { PokemonComponent } from './pages/pokemon/pokemon.component';
+import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
+import { PokemonCardV2Component } from './components/pokemon-card-v2/pokemon-card-v2.component';
+import { EquipoPokemonComponent } from './pages/equipo-pokemon/equipo-pokemon.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +25,9 @@ import { PokemonComponent } from './pages/pokemon/pokemon.component';
     MiContadorComponent,
     PokedexComponent,
     PokemonComponent,
+    PokemonCardComponent,
+    PokemonCardV2Component,
+    EquipoPokemonComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

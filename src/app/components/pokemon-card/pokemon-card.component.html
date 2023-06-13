@@ -1,0 +1,10 @@
+<div class="pokemon-card" *ngIf="pokemon">
+    <img [src]="pokemon.sprites.front_default" alt="Imagen del pokemon" />
+    <img [src]="pokemon.sprites.back_default" alt="Imagen del pokemon" />
+    <img [src]="pokemon.sprites.front_shiny" alt="Imagen del pokemon" />
+    <h2>{{ pokemon.name }}</h2>
+    <p class="tipos">
+        <span *ngFor="let tipo of pokemon.types">{{ tipo.type.name }}</span>
+    </p>
+    <p>Peso: {{ pokemon.weight }}u</p>
+</div>
