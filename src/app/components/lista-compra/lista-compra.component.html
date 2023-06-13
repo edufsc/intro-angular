@@ -1,0 +1,8 @@
+<!-- ngModel conecta el valor del input con una propiedad del componente -->
+<input placeholder="Nuevo producto" type="text" [(ngModel)]="nuevoProducto">
+<button class="btn btn-primary" [disabled]="!nuevoProducto" (click)="incluirProducto()">Añadir</button>
+<ul>
+    <li *ngFor="let producto of productos; let i = index">
+        <span>{{ producto }}</span> <button class="btn-icon" (click)="borrarProducto(i)">x</button>
+    </li>
+</ul>

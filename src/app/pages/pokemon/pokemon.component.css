@@ -1,0 +1,10 @@
+.tipos {
+    display: flex;
+    gap: 10px;
+}
+
+.tipos span{
+    background-color: blueviolet;
+    padding: 5px 10px;
+    text-transform: capitalize;
+}

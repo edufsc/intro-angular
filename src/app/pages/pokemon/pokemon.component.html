@@ -1,0 +1,14 @@
+<!-- para evitar errores, renderizar solo si hay pokemon -->
+<div *ngIf="pokemon">
+    <img [src]="pokemon.sprites.front_default" alt="Imagen del pokemon" />
+    <img [src]="pokemon.sprites.back_default" alt="Imagen del pokemon" />
+    <img [src]="pokemon.sprites.front_shiny" alt="Imagen del pokemon" />
+    <h2>{{ pokemon.name }}</h2>
+    <p class="tipos">
+        <span *ngFor="let tipo of pokemon.types">{{ tipo.type.name }}</span>
+    </p>
+    <p>Peso: {{ pokemon.weight }}u</p>
+    <button (click)="anteriorPokemon()" class="btn btn-primary">Anterior</button>
+    <button (click)="pokemonAleatorio()" class="btn">Aleatorio</button>
+    <button (click)="siguientePokemon()" class="btn btn-primary">Siguiente</button>
+</div>

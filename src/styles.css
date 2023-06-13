@@ -1,1 +1,81 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    --color-primary: #00cc88;
+    --color-secondary: aquamarine;
+    --color-background: #1f1f1f;
+    --color-text: #ffffff;
+    --color-warning: orange;
+    --color-success: greenyellow;
+    --color-danger: crimson;
+    --color-shade-dark: rgba(0, 0, 0, 0.1);
+    --color-shade-light: rgba(255, 255, 255, 0.1);
+}
+
+html {
+    background-color: var(--color-background);
+    color: var(--color-text);
+    font-family: monospace;
+    font-size: 22px;
+}
+
+input {
+    font-size: inherit;
+    padding: 10px 12px;
+    background-color: var(--color-shade-light);
+    border: 1px solid var(--color-shade-dark);
+    color: var(--color-text);
+}
+
+body {
+    max-width: 960px;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: var(--color-shade-dark);
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-secondary);
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--color-primary);
+}
+
+.text-warning {
+    color: var(--color-warning);
+}
+
+.text-success {
+    color: var(--color-success);
+}
+
+.text-danger {
+    color: var(--color-danger);
+}
+
+.btn {
+    padding: 10px 12px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+.btn-primary {
+    color: var(--color-background);
+    background-color: var(--color-primary);
+}
+
+.btn-primary:disabled {
+    opacity: 0.7;
+}
+
+.hidden {
+    display: none;
+}

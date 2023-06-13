@@ -1,0 +1,6 @@
+<h2 [ngClass]="{'text-green':contador>0,'text-red':contador<0}">Contador: {{ contador }}</h2>
+<!-- Mostrar u ocultar de forma condicional -->
+<button class="btn" (click)="aumentarContador()">Aumentar</button>
+<button class="btn" (click)="reducirContador()">Reducir</button>
+<p *ngIf="contador>0">El contador es positivo</p>
+<p *ngIf="contador<0">El contador es negativo</p>

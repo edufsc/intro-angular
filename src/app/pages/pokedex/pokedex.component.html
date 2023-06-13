@@ -1,0 +1,9 @@
+<h2>Pokemon ({{ totalPokemons }})</h2>
+<ul>
+    <!-- recorrer cada pokemon almacenado en pokemons -->
+    <li *ngFor="let pokemon of pokemons">
+        <a [routerLink]="'/pokemon/'+getIdFromURL(pokemon.url)">{{ pokemon.name }}</a>
+    </li>
+</ul>
+<button [disabled]="!previous" (click)="paginaAnterior()" class="btn btn-primary">Anterior</button>
+<button [disabled]="!next" (click)="paginaSiguiente()" class="btn btn-primary">Siguiente</button>
